@@ -93,7 +93,7 @@ t('runtime manifest hash matches asset-side', () => {
 console.log('\n== skillLoader ==');
 t('skill loaded with expected metadata', () => {
   eq(skill.skillId, 'spatial-governance-skill');
-  eq(skill.skillVersion, '0.1.0');
+  eq(skill.skillVersion, '0.1.1');
   ok(/^sha256:[0-9a-f]{64}$/.test(skill.skillManifestHash));
 });
 t('seven known functions present', () => {
