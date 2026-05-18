@@ -1,0 +1,32 @@
+{
+  "name": "mr-skill-runtime",
+  "version": "0.1.0",
+  "description": "Edge runtime for the spatial-governance-skill. Loads MR-Skill-Assets, builds prompts via progressive disclosure, calls an LLM provider, parses and validates the output, and returns a structured Decision. No Fabric, no Unity, no signing keys.",
+  "private": true,
+  "main": "src/server.js",
+  "bin": {
+    "skill": "src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "cli": "node src/cli.js",
+    "eval": "node eval/run_intent_eval.js",
+    "test": "node tests/unit.test.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "mixed-reality",
+    "blockchain",
+    "agent-skills",
+    "hyperledger-fabric"
+  ],
+  "license": "Apache-2.0"
+}
